@@ -15,6 +15,7 @@ public Statement st;
     Connection cn = TesDB.TesDB();
     public JenisObatGUI() {
         initComponents();
+        this.setLocationRelativeTo(null);
         setVisible(true);
         judul();
         tampilData("");
@@ -95,6 +96,7 @@ public Statement st;
             }
         });
 
+        btnBatal.setBackground(new java.awt.Color(0, 255, 255));
         btnBatal.setText("Batal");
         btnBatal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -102,6 +104,7 @@ public Statement st;
             }
         });
 
+        btnHapus.setBackground(new java.awt.Color(0, 255, 255));
         btnHapus.setText("Hapus");
         btnHapus.setPreferredSize(new java.awt.Dimension(67, 23));
         btnHapus.addActionListener(new java.awt.event.ActionListener() {
@@ -110,6 +113,7 @@ public Statement st;
             }
         });
 
+        btnEdit.setBackground(new java.awt.Color(0, 255, 255));
         btnEdit.setText("Edit");
         btnEdit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,6 +121,7 @@ public Statement st;
             }
         });
 
+        btnSimpan.setBackground(new java.awt.Color(0, 255, 255));
         btnSimpan.setText("Simpan");
         btnSimpan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -124,6 +129,7 @@ public Statement st;
             }
         });
 
+        btnTutup.setBackground(new java.awt.Color(0, 255, 255));
         btnTutup.setText("Tutup");
         btnTutup.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -133,10 +139,7 @@ public Statement st;
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null}
+
             },
             new String [] {
                 "Kode Jenis", "Jenis Obat"
@@ -149,6 +152,7 @@ public Statement st;
         });
         jScrollPane1.setViewportView(jTable1);
 
+        btnTambah.setBackground(new java.awt.Color(0, 255, 255));
         btnTambah.setText("Tambah");
         btnTambah.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -317,6 +321,7 @@ public Statement st;
         txtJenis.setEnabled(true);
         btnTambah.setEnabled(false);
         btnSimpan.setEnabled(false);
+        btnEdit.setText("Update");
         btnEdit.setEnabled(true);
         btnHapus.setEnabled(true);
         btnBatal.setEnabled(true);
